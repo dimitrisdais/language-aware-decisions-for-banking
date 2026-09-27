@@ -1,0 +1,141 @@
+{
+  "family": {
+    "type": "choice",
+    "instructions": "Which banking service family best matches the customer's request?",
+    "criteria": {
+      "card_lifecycle_access": "obtaining, receiving, activating, linking or using physical and virtual cards",
+      "payments_refunds_direct_debits": "card payments, duplicate charges, refunds and direct debit transactions",
+      "cash_withdrawals_atms": "cash machines, ATM withdrawals, fees, failures or retained cards",
+      "bank_transfers_beneficiaries": "bank transfers, recipients, beneficiaries, timing, fees and failures",
+      "topups_deposits": "adding money by card, bank transfer, cash or cheque and related limits or failures",
+      "currency_exchange": "supported currencies, exchange rates, exchange fees and exchanging in the app",
+      "identity_account_eligibility": "identity verification, account profile, access, eligibility and country support",
+      "security_lost_devices": "lost or stolen cards and phones, or compromised card security"
+    }
+  },
+  "intent__card_lifecycle_access": {
+    "type": "choice",
+    "instructions": "If this request belongs to card lifecycle access, which specific intent fits best?",
+    "criteria": {
+      "card_arrival": "card arrival",
+      "card_delivery_estimate": "card delivery estimate",
+      "get_physical_card": "get physical card",
+      "order_physical_card": "order physical card",
+      "card_linking": "card linking",
+      "getting_spare_card": "getting spare card",
+      "card_about_to_expire": "card about to expire",
+      "activate_my_card": "activate my card",
+      "card_not_working": "card not working",
+      "card_acceptance": "card acceptance",
+      "contactless_not_working": "contactless not working",
+      "pin_blocked": "pin blocked",
+      "change_pin": "change pin",
+      "visa_or_mastercard": "visa or mastercard",
+      "getting_virtual_card": "getting virtual card",
+      "virtual_card_not_working": "virtual card not working",
+      "get_disposable_virtual_card": "get disposable virtual card",
+      "disposable_card_limits": "disposable card limits",
+      "apple_pay_or_google_pay": "apple pay or google pay"
+    }
+  },
+  "intent__payments_refunds_direct_debits": {
+    "type": "choice",
+    "instructions": "If this request belongs to payments refunds direct debits, which specific intent fits best?",
+    "criteria": {
+      "card_payment_wrong_exchange_rate": "card payment wrong exchange rate",
+      "extra_charge_on_statement": "extra charge on statement",
+      "card_payment_fee_charged": "card payment fee charged",
+      "card_payment_not_recognised": "card payment not recognised",
+      "pending_card_payment": "pending card payment",
+      "request_refund": "request refund",
+      "Refund_not_showing_up": "Refund not showing up",
+      "declined_card_payment": "declined card payment",
+      "reverted_card_payment?": "reverted card payment",
+      "transaction_charged_twice": "transaction charged twice",
+      "direct_debit_payment_not_recognised": "direct debit payment not recognised"
+    }
+  },
+  "intent__cash_withdrawals_atms": {
+    "type": "choice",
+    "instructions": "If this request belongs to cash withdrawals atms, which specific intent fits best?",
+    "criteria": {
+      "pending_cash_withdrawal": "pending cash withdrawal",
+      "wrong_amount_of_cash_received": "wrong amount of cash received",
+      "atm_support": "atm support",
+      "declined_cash_withdrawal": "declined cash withdrawal",
+      "card_swallowed": "card swallowed",
+      "wrong_exchange_rate_for_cash_withdrawal": "wrong exchange rate for cash withdrawal",
+      "cash_withdrawal_not_recognised": "cash withdrawal not recognised",
+      "cash_withdrawal_charge": "cash withdrawal charge"
+    }
+  },
+  "intent__bank_transfers_beneficiaries": {
+    "type": "choice",
+    "instructions": "If this request belongs to bank transfers beneficiaries, which specific intent fits best?",
+    "criteria": {
+      "cancel_transfer": "cancel transfer",
+      "transfer_not_received_by_recipient": "transfer not received by recipient",
+      "declined_transfer": "declined transfer",
+      "pending_transfer": "pending transfer",
+      "transfer_timing": "transfer timing",
+      "beneficiary_not_allowed": "beneficiary not allowed",
+      "transfer_fee_charged": "transfer fee charged",
+      "receiving_money": "receiving money",
+      "failed_transfer": "failed transfer",
+      "transfer_into_account": "transfer into account",
+      "balance_not_updated_after_bank_transfer": "balance not updated after bank transfer"
+    }
+  },
+  "intent__topups_deposits": {
+    "type": "choice",
+    "instructions": "If this request belongs to topups deposits, which specific intent fits best?",
+    "criteria": {
+      "automatic_top_up": "automatic top up",
+      "top_up_by_bank_transfer_charge": "top up by bank transfer charge",
+      "pending_top_up": "pending top up",
+      "top_up_limits": "top up limits",
+      "supported_cards_and_currencies": "supported cards and currencies",
+      "top_up_reverted": "top up reverted",
+      "topping_up_by_card": "topping up by card",
+      "verify_top_up": "verify top up",
+      "top_up_by_cash_or_cheque": "top up by cash or cheque",
+      "top_up_failed": "top up failed",
+      "top_up_by_card_charge": "top up by card charge",
+      "balance_not_updated_after_cheque_or_cash_deposit": "balance not updated after cheque or cash deposit"
+    }
+  },
+  "intent__currency_exchange": {
+    "type": "choice",
+    "instructions": "If this request belongs to currency exchange, which specific intent fits best?",
+    "criteria": {
+      "exchange_rate": "exchange rate",
+      "fiat_currency_support": "fiat currency support",
+      "exchange_via_app": "exchange via app",
+      "exchange_charge": "exchange charge"
+    }
+  },
+  "intent__identity_account_eligibility": {
+    "type": "choice",
+    "instructions": "If this request belongs to identity account eligibility, which specific intent fits best?",
+    "criteria": {
+      "age_limit": "age limit",
+      "edit_personal_details": "edit personal details",
+      "why_verify_identity": "why verify identity",
+      "unable_to_verify_identity": "unable to verify identity",
+      "terminate_account": "terminate account",
+      "verify_source_of_funds": "verify source of funds",
+      "passcode_forgotten": "passcode forgotten",
+      "verify_my_identity": "verify my identity",
+      "country_support": "country support"
+    }
+  },
+  "intent__security_lost_devices": {
+    "type": "choice",
+    "instructions": "If this request belongs to security lost devices, which specific intent fits best?",
+    "criteria": {
+      "lost_or_stolen_card": "lost or stolen card",
+      "compromised_card": "compromised card",
+      "lost_or_stolen_phone": "lost or stolen phone"
+    }
+  }
+}

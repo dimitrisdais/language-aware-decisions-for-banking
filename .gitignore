@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Local model and dataset caches
+cache/
+data/
+models/
+runs/
+*.safetensors
+*.pt
+
+# Local secrets
+.env
+.env.*
+

@@ -1,0 +1,10 @@
+laya==0.3.11
+datasets>=3.0,<5
+huggingface_hub>=0.30
+transformers>=4.48,<6
+safetensors>=0.5
+numpy>=1.26,<3
+pandas>=2.2,<3
+scikit-learn>=1.5,<2
+matplotlib>=3.8,<4
+
